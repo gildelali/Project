@@ -34,10 +34,10 @@ console.log(template);
 let num1 = 1;
 let num2 = 1.16;
 let num3 = "2"; // the value of num3 is a string, not a number
+// Number(num3) converts "2" to 2, otherwise + joins them as text ("2.162")
 const sum = num1 + num2 + Number(num3);
-// convert "2" to 2, otherwise + joins them as text ("2.162")
 
-console.log(sum);
+console.log(sum); // 4.16
 console.log(NaN); // Not a Number
 console.log(undefined + 5); // undefined + 5 = NaN
 
@@ -120,7 +120,7 @@ const car = {
   make: "Toyota",
   model: "Camry",
   year: 2020,
-  isElectric: true,
+  isElectric: false,
 };
 
 // 1. READ a value: use a dot
